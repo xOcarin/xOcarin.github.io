@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <div class="socials">
+      <a href="https://github.com/xOcarin" draggable="false">
+        <img class="socialbuttons img" id="githubbtn" draggable="false" src="./assets/github.png" onclick="playClickSound();" onmouseover="playHoverSound()">
+      </a>
+      <a href="https://www.linkedin.com/in/cameron-ware-a18190257/" draggable="false">
+        <img class="socialbuttons" id="linkedinbtn"  draggable="false" src="./assets/linked%20in.png" onclick="playClickSound();" onmouseover="playHoverSound()">
+      </a>
+      <p class="text socialbuttons end" id="contact" onclick="showEmail(); playCharmingSound(); playClickSound()" style="font-family: contb; color: #FFFFFF;">Contact</p>
+
+
+    </div>
+  </head>
+  <body >
+    <div id="overlay"></div>
+    <div id="cover" onclick="hideCover(); playFadeSound();">
+      <p class="text" id="start" style="font-family: contl; color: #FFFFFF;">Click to Enter...</p>
+      <p class="text" id="audionotif"  style="font-family: contl; color: #FFFFFF;"><br>This website uses audio.</p>
+      <p class="text" id="audionotif2"  style="font-family: contl; color: #FFFFFF;"><br>I do not own any of the music.</p>
+    </div>
+    <link rel="stylesheet" href="./styles/style.css">
+    <canvas id="canvas"></canvas>
+    <script src="./scripts/utils.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+
+    <audio id="hoverAudio" src="./assets/sounds/hover.wav" preload="auto"></audio>
+    <audio id="clickAudio" src="./assets/sounds/click.wav" preload="auto"></audio>
+    <audio id="fadeAudio" src="./assets/sounds/fade.wav" preload="auto"></audio>
+    <audio id="charmingAudio" src="./assets/sounds/charming.wav" preload="auto"></audio>
+    <audio id="whistleAudio" src="./assets/sounds/whistle.wav" preload="auto"></audio>
+    <audio id="pipAudio" src="./assets/sounds/pip.wav" preload="auto"></audio>
+    <audio id="sloshAudio" src="./assets/sounds/slosh.mp3" preload="auto"></audio>
+    <audio id="blipAudio" src="./assets/sounds/blip.wav" preload="auto"></audio>
+    <audio id="ambAudio" src="./assets/sounds/ambience.mp3" preload="auto"></audio>
+
+    <audio id="ttAudio" src="./assets/sounds/ttmusic.mp3" preload="auto"></audio>
+    <audio id="caAudio" src="./assets/sounds/camusic.mp3" preload="auto"></audio>
+    <audio id="lnAudio" src="./assets/sounds/lnmusic.mp3" preload="auto"></audio>
+    <audio id="prAudio" src="./assets/sounds/pokerpsmusic.mp3" preload="auto"></audio>
+
+
+
+
+    <!-- MAIN MENU -->
+    <div class="header" id="mainmenu">
+      <div id="emailtrick">
+        <p class="text invis" id="email1" style="font-family: contm; color: #FFFFFF; font-size: 40px">cschilling16111@gmail.com</p>
+        <img id="selfpic"  draggable="false" src="./assets/self.png" alt="">
+        <p class="text" id="email2" style="font-family: contm; color: #FFFFFF; font-size: 40px">cschilling16111@gmail.com</p>
+      </div>
+      <p class="text" id="name" style="font-family: contb; color: #FFFFFF; font-size: 100px">Cameron Ware</p>
+        <p class="text" id="title" style="font-family: contb; color: #FFFFFF; font-size: 50px">&lt;developer&gt;</p>
+      <div class="tabs">
+        <img class="buttons" id="projectsbtn" draggable="false" src="./assets/projectstab.png" onclick="playClickSound(); playSloshSound();  hidemainmenu(); showprojmenu()" onmouseover="playHoverSound()">
+        <img class="buttons" id="aboutmebtn" draggable="false" src="./assets/aboutmetab.png" onclick="playClickSound(); playSloshSound(); hidemainmenu(); showaboutmemenu()" onmouseover="playHoverSound()">
+      </div>
+    </div>
+
+    <!-- POPRJECT MENU -->
+    <div class="projecttab" id="projectmenu">
+      <div id="projtitlediv">
+         <p class="text" id="projtitle" style="font-family: contb; color: #FFFFFF; font-size: 75px">Projects</p>
+        <img  id="projectbar" draggable="false" src="./assets/projbar.png" onclick="playClickSound(); hidemainmenu()" onmouseover="playHoverSound()">
+      </div>
+      <div class="projdescs">
+        <p class="text descs" id="ttdesc" style="font-family: contl; color: #FFFFFF; font-size: 25px; display: flex; flex-direction: column;">
+          <span style="white-space: nowrap; margin-left: auto; font-family: contm; font-size: 50px;">Twitch Tank</span>
+          <span style="margin-left: auto;">JS / Node.js</span>
+        </p>
+
+        <p class="text descs" id="lndesc" style="font-family: contl; color: #FFFFFF; font-size: 25px">
+          <span style="white-space: nowrap; font-family: contm;font-size: 50px">Literally Not!</span> <br>Java / Android Studio
+        </p>
+        <p class="text descs" id="cadesc" style="font-family: contl; color: #FFFFFF; font-size: 25px">
+          <span style="white-space: nowrap; margin-left: auto; font-family: contm; font-size: 50px;">Coffee App</span><br>
+          <span style="margin-left: auto;">Java / Android Studio</span>
+        </p>
+        <p class="text descs" id="prdesc" style="font-family: contl; color: #FFFFFF; font-size: 25px">
+          <span style="white-space: nowrap; font-family: contm;font-size: 50px">PokeRPS</span> <br>Python / OpenCV
+        </p>
+      </div>
+      <div class="projgifs">
+        <video class="gifs" id="ttgif" draggable="false" autoplay loop muted>
+          <source src="./assets/previews/tt.webm" type="video/webm">
+        </video>
+        <video class="gifs" id="lngif" draggable="false" autoplay loop muted>
+          <source src="./assets/previews/literallynot.webm" type="video/webm">
+        </video>
+        <video class="gifs" id="cagif" draggable="false" autoplay loop muted>
+          <source src="./assets/previews/coa.webm" type="video/webm">
+        </video>
+        <video class="gifs" id="prgif" draggable="false" autoplay loop muted>
+          <source src="./assets/previews/pokeRPS.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="projectbtns">
+        <div class="projdiv">
+          <img class="buttons"
+               id="twitchtankbtn"
+               draggable="false"
+               src="./assets/projbtn.png"
+               onclick="playClickSound(); playMusic('ttAudio'); playWhistleSound(); displayProj('tttotal', 'projectmenu')"
+               onmouseover="playHoverSound(); hoverGifs(true, 'ttgif'); fadeinText(true, 'ttdesc')"
+               onmouseout="hoverGifs(false, 'ttgif'); fadeinText(false, 'ttdesc')">
+
+        </div>
+        <div class="projdiv">
+          <img class="buttons"
+               id="literallynotbtn"
+               draggable="false"
+               src="./assets/projbtn.png"
+               onclick="playClickSound();  playMusic('lnAudio'); playWhistleSound(); displayProjr('lntotal', 'projectmenu')"
+               onmouseover="playHoverSound(); hoverGifs(true, 'lngif');fadeinText(true, 'lndesc')"
+               onmouseout="hoverGifs(false, 'lngif');fadeinText(false, 'lndesc')">
+
+        </div>
+        <div class="projdiv">
+          <img class="buttons"
+               id="coffeeorderingappbtn"
+               draggable="false"
+               src="./assets/projbtn.png"
+               onclick="playClickSound(); playMusic('caAudio'); playWhistleSound(); displayProj('catotal', 'projectmenu')"
+               onmouseover="playHoverSound(); hoverGifs(true, 'cagif');fadeinText(true, 'cadesc')"
+               onmouseout="hoverGifs(false, 'cagif');fadeinText(false, 'cadesc')">
+
+        </div>
+        <div class="projdiv">
+          <img class="buttons"
+               id="pokerpsbtn"
+               draggable="false"
+               src="./assets/projbtn.png"
+               onclick="playClickSound(); playMusic('prAudio'); playWhistleSound(); displayProjr('prtotal', 'projectmenu')"
+               onmouseover="playHoverSound(); hoverGifs(true, 'prgif');fadeinText(true, 'prdesc')"
+               onmouseout="hoverGifs(false, 'prgif');fadeinText(false, 'prdesc')">
+
+        </div>
+      </div>
+      <img class="buttons" id="backbtnproj" draggable="false" src="./assets/backbtn.png" onclick="playClickSound(); playSloshSound();  hideprojmenu(); showmainmenu()" onmouseover="playHoverSound()">
+    </div>
+
+    <!-- about me MENU -->
+    <div class="aboutmetab" id="aboutmemenu">
+      <p class="text" id="line1" style="font-family: contm; color: #FFFFFF; font-size: 40px">
+        Hi, I'm Cameron, a computer science student trying to find my spot in the industry.
+        Through diverse personal and school projects, I have aquired various skills in different areas in
+        computer science. My goal is to find out which areas fit me best and focus on them in my last year of school.
+      </p>
+      <div id="littetext">
+        <p class="text" id="education" style="font-family: contl; color: #FFFFFF; font-size: 20px">
+          <strong>Education:</strong> University of Pittsburgh at Johnstown, 2020-2024, Computer Science
+        </p>
+        <p class="text" id="skillshave" style="font-family: contl; color: #FFFFFF; font-size: 20px">
+          <strong>Skills I have:</strong> HTML/CSS/JS, Node.js, Java, Python, C++, GIT, Electron, PHP, CV
+        </p>
+        <p class="text" id="skillswork" style="font-family: contl; color: #FFFFFF; font-size: 20px">
+          <strong>Skills I'm working on:</strong> Machine Learning, SQL, Unity, AWS, React
+        </p>
+        <p class="text" id="altskills" style="font-family: contl; color: #FFFFFF; font-size: 20px">
+          <strong>Other skills:</strong> Photoshop, Premiere, Adobe XD
+        </p>
+
+      </div>
+      <img class="buttons" id="backbtnam" draggable="false" src="./assets/backbtn.png" onclick="playClickSound(); playSloshSound();  hideaboutmemenu(); showmainmenu()" onmouseover="playHoverSound()">
+    </div>
+    <!-- TT page -->
+  <div id="tttotal" class="total">
+    <div id="ttpage">
+      <div id="ttheader">
+        <div  id="ttgallthumb" class="gallerythumb" onclick="playClickSound(); showgallery('ttgallerydiv', 'ttpage','ttgallthumb');" onmouseover="playHoverSound()">
+          <p class="gallerythumbtext" style="font-family: contm; color: #FFFFFF; font-size: 40px">Gallery</p>
+          <img class="gallerythumbpic" draggable="false" src="./assets/ttgallerybtn.png" >
+        </div>
+        <img class="logos projpage" id="ttlogo" draggable="false" src="./assets/ttlogo.png" >
+        <div  id="ttgallthumbinv" class="gallerythumbinv" onclick="playClickSound(); showgallery('ttgallerydiv', 'ttpage','ttgallthumb');" onmouseover="playHoverSound()">
+          <p class="gallerythumbtext" style="font-family: contm; color: #FFFFFF; font-size: 40px">Gallery</p>
+          <img class="gallerythumbpic"  draggable="false" src="./assets/ttgallerybtn.png" >
+        </div>
+      </div>
+        <div class="centerbar">
+          <img class="arrows invis backarrow" draggable="false" onclick="playClickSound(); "  src="./assets/backarrow.png" >
+          <p class="text para projpage" id="ttpara" style="font-family: contl; color: #FFFFFF; font-size: 40px">
+            Built as a final project for a web development class, this
+            program uses the Twitch API to read in chat data to display
+            viewers as a fish avatar. When the viewer is inactive in the
+            stream, their fish will "die" and float to the top.
+            </p>
+          <img class="arrows projpage backarrow" draggable="false" onclick="playClickSound(); stopMusic('ttAudio'); playBlipSound(); hideProj('tttotal', 'projectmenu')" onmouseover="playHoverSound()" src="./assets/backarrow.png" >
+        </div>
+      <p class="text tech projpage" id="tttech" style="font-family: contm; color: #FFFFFF; font-size: 40px">Technologies used: Javascript, Node.js, Electron, Twitch API</p>
+      <a style="text-decoration: none" target="_blank" href="https://github.com/xOcarin/TwitchTank" draggable="false">
+        <img class="logos gh projpage" id="ttgh" draggable="false" onclick="playClickSound();" onmouseover="playHoverSound()" src="./assets/visitbtn.png" >
+      </a>
+      <div id="ttgallerydiv">
+        <img class="gallerypic xbtn" draggable="false" onclick="playClickSound(); hidegallery('ttgallerydiv', 'ttpage','ttgallthumb')" onmouseover="playHoverSound()" src="./assets/xbtn.png" >
+        <div id="gallerydivs1">
+          <img class="gallerypic" draggable="false" onclick="playClickSound(); selectphoto(0, 'ttbigpiccont', 'ttxbtn','ttpic');" onmouseover="playHoverSound()" src="./assets/ttgallery/tt1.png" >
+          <img class="gallerypic" draggable="false" onclick="playClickSound(); selectphoto(1, 'ttbigpiccont', 'ttxbtn','ttpic');" onmouseover="playHoverSound()" src="./assets/ttgallery/tt2.png" >
+          <img class="gallerypic" draggable="false" onclick="playClickSound(); selectphoto(2, 'ttbigpiccont', 'ttxbtn','ttpic');" onmouseover="playHoverSound()" src="./assets/ttgallery/tt3.png" >
+        </div>
+        <div id="gallerydivs2">
+          <img class="gallerypic" draggable="false" onclick="playClickSound(); selectphoto(3, 'ttbigpiccont', 'ttxbtn','ttpic');" onmouseover="playHoverSound()" src="./assets/ttgallery/tt4.png" >
+          <img class="gallerypic" draggable="false" onclick="playClickSound(); selectphoto(4, 'ttbigpiccont', 'ttxbtn','ttpic');" onmouseover="playHoverSound()" src="./assets/ttgallery/tt5.png" >
+        </div>
+      </div>
+      </div>
+        <div class="bigpiccont" id="ttbigpiccont">
+          <img class="leftarrow arrows" draggable="false" onclick="playClickSound(); hitleft('ttpic')" onmouseover="playHoverSound()" src="./assets/leftbtn.png" >
+          <img id="ttpic"  class="bigpic" draggable="false" onclick="playClickSound();" src="./assets/ttgallery/tt1uc.png" >
+          <img class="rightarrow arrows" draggable="false" onclick="playClickSound(); hitright('ttpic')" onmouseover="playHoverSound()" src="./assets/rightbtn.png" >
+        </div>
+      <img  id="ttxbtn" class="bigpicxbtn" draggable="false" onclick="playClickSound(); hidebigpic('ttbigpiccont','ttxbtn' )" onmouseover="playHoverSound()" src="./assets/xbtn.png" >
+  </div>
+
+  <!--COFFEE PAGE -->
+    <div id="catotal" class="total">
+      <div id="capage">
+        <div id="caheader">
+          <img class="logos projpage" id="calogo" draggable="false" src="./assets/calogo.png" >
+        </div>
+        <div class="centerbar">
+          <img class="arrows invis backarrow" draggable="false" onclick="playClickSound(); "  src="./assets/backarrow.png" >
+          <p class="text para projpage" id="capara" style="font-family: contl; color: #FFFFFF; font-size: 40px">
+            In a software engineering class, worked with a group to create a coffee shop app
+            using SCRUM and Jira. We integrated an AWS web server to handle
+            orders and accounts. Through test-driven development, we validated
+            the integration and ensured reliability. Our project was made with
+            the intention of practicing real-world software engineering practices for efficient developement.
+
+          </p>
+          <img class="arrows projpage backarrow" draggable="false" onclick="playClickSound(); stopMusic('caAudio'); playBlipSound(); hideProj('catotal', 'projectmenu')" onmouseover="playHoverSound()" src="./assets/backarrow.png" >
+        </div>
+        <p class="text tech projpage" draggable="false" id="catech" style="font-family: contm; color: #FFFFFF; font-size: 40px">Technologies used: Java, Android Studio, AWS, Jira Software</p>
+        <a style="text-decoration: none" target="_blank" href="https://bitbucket.org/cjcj55/scrum-project-1/src/master/" draggable="false">
+          <img class="logos gh projpage" id="cagh"  draggable="false" onclick="playClickSound();" onmouseover="playHoverSound()" src="./assets/visitbtn.png" >
+        </a>
+    </div>
+
+
+    <!--Literally PAGE -->
+    <div id="lntotal" class="total">
+      <div id="lnpage">
+        <div id="lnheader">
+          <img class="logos projpage" id="lnlogo" draggable="false" src="./assets/lnlogo.png" >
+        </div>
+        <div class="centerbar">
+          <img class="arrows projpage backarrow" draggable="false" onclick="playClickSound(); stopMusic('lnAudio'); playBlipSound(); hideProjr('lntotal', 'projectmenu')" onmouseover="playHoverSound()" src="./assets/backarrowr.png" >
+          <p class="text para projpage" id="lnpara" style="font-family: contl; color: #FFFFFF; font-size: 40px">
+            In a software engineering class, worked with a group to create a speech detection app
+            using SCRUM and Jira. We integrated an AWS web server to handle
+            stats and accounts. Our project was made to be a silly, yet functional
+            way to get people to stop the overuse of the word "literally", by listening
+            in through constant microphone access and shaming users when they said the word.
+          </p>
+          <img class="arrows invis backarrow" draggable="false" onclick="playClickSound(); " onmouseover="playHoverSound()" src="./assets/backarrowr.png" >
+        </div>
+        <p class="text tech projpage" id="lntech" style="font-family: contm; color: #FFFFFF; font-size: 40px">Technologies used: Java, Android Studio, AWS, Jira Software</p>
+        <a style="text-decoration: none" target="_blank" href="https://github.com/Darmiss/Literally" draggable="false">
+          <img class="logos gh projpage" id="lngh"  draggable="false" onclick="playClickSound();" onmouseover="playHoverSound()" src="./assets/visitbtn.png" >
+        </a>
+      </div>
+    </div>
+
+
+      <!-- PokeRPS page -->
+      <div id="prtotal" class="total">
+        <div id="prpage">
+          <div id="prheader">
+            <a  id="prgallthumb" class="gallerythumb" onclick="playClickSound();" onmouseover="playHoverSound()"  style="text-decoration: none" target="_blank" href="https://www.youtube.com/watch?v=Amsaed5PcQ4" draggable="false">
+              <p id="prgalltext"  class="gallerythumbtext" style="font-family: contm; color: #FFFFFF; font-size: 40px">Demo Video</p>
+              <img id="prgallthumbpic" class="gallerythumbpic" draggable="false" src="./assets/prgallerybtn.png" >
+            </a>
+            <img class="logos projpage" id="prlogo" draggable="false" src="./assets/prlogo.png" >
+            <div  id="prgallthumbinv" class="gallerythumbinv" onclick="playClickSound(); showgallery('prgallerydiv', 'prpage','prgallthumb');" onmouseover="playHoverSound()">
+              <p class="gallerythumbtext" style="font-family: contm; color: #FFFFFF; font-size: 40px">Gallery</p>
+              <img class="gallerythumbpic" draggable="false" src="./assets/ttgallerybtn.png" >
+            </div>
+          </div>
+          <div class="centerbar">
+            <img class="arrows projpage backarrow" draggable="false" onclick="playClickSound(); stopMusic('prAudio'); playBlipSound(); hideProjr('prtotal', 'projectmenu')" onmouseover="playHoverSound()" src="./assets/backarrowr.png" >
+            <p class="text para projpage" id="rppara" style="font-family: contl; color: #FFFFFF; font-size: 40px">
+              Rock, Paper, Scissors game created using python.
+              Worked with one other person to make a game where
+              you put Pokemon cards up to a camera to "battle".
+              The program detects feature points in the cards and
+              matches them to stored card data to use in the game.
+
+            </p>
+            <img class="arrows invis backarrow" draggable="false" onclick="playClickSound(); "  src="./assets/backarrowr.png" >
+          </div>
+          <p class="text tech projpage" id="prtech" style="font-family: contm; color: #FFFFFF; font-size: 40px">Technologies used: Python, OpenCV, Pygame</p>
+          <a style="text-decoration: none" target="_blank" href="https://github.com/xOcarin/PokemonRPSGame" draggable="false">
+            <img class="logos gh projpage" id="prgh" draggable="false" onclick="playClickSound();" onmouseover="playHoverSound()" src="./assets/visitbtn.png" >
+          </a>
+
+        </div>
+      </div>
+
+
+
+  </body>
+
+
+
+</html>
