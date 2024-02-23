@@ -176,13 +176,6 @@
 
 
 
-
-
-
-
-
-
-
     for (let i = 0; i < numFish; i++) {
 
     let type = 0;
