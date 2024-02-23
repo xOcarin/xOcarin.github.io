@@ -168,7 +168,7 @@
     canvas.height = 0;
 
     let enterfish = [];
-    let numFish = 8;
+    let numFish = 16;
     let allFish = [];
     let names = [];
     let type = "0"
