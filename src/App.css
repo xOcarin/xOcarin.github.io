@@ -1,16 +1,27 @@
 .App {
+  background: linear-gradient(to bottom, #f1f1f1, #a1a1a1);
   text-align: center;
-}
-
-
-
-.App-header {
-  background-color: #f1f1f1;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
 }
+
+
+.shelfimg{
+  margin-bottom: 20rem;
+}
+
+.piecesimg {
+  box-shadow: 0 4px 8px rgba(31, 31, 31, 0.5);
+}
+
+#piecesDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5rem;
+  transform: translateY(1rem);
+}
+

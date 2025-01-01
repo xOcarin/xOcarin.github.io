@@ -4,9 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+        <div id='piecesDiv'>
+          <img className='piecesimg' src="/mii.png" alt="Description" />
+          <img className='piecesimg' src="/mii.png" alt="Description" />
+          <img className='piecesimg' src="/mii.png" alt="Description" />
+          <img className='piecesimg' src="/mii.png" alt="Description" />
+          <img className='piecesimg' src="/mii.png" alt="Description" />
+        </div>
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf.png" alt="Description" />
     </div>
   );
 }
