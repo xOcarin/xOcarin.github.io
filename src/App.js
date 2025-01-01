@@ -11,12 +11,12 @@ function App() {
           <img className='piecesimg' src="/mii.png" alt="Description" />
           <img className='piecesimg' src="/mii.png" alt="Description" />
         </div>
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
-        <img className='shelfimg' src="/shelf.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
+        <img className='shelfimg' src="/shelf2.png" alt="Description" />
     </div>
   );
 }
