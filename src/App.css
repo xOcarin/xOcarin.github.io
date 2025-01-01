@@ -1,11 +1,14 @@
-.App {
+body{
   background: linear-gradient(to bottom, #f1f1f1, #a1a1a1);
+}
+
+.App {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  transform: scale(.9);
 }
 
 
