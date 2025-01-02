@@ -24,6 +24,7 @@ body{
   position: relative;
   z-index: 1;
   transition: .5s;
+  width: 10vw;
 }
 
 .piecesimg:hover{
