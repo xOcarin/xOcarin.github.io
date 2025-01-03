@@ -2,7 +2,31 @@ body{
   background: linear-gradient(to bottom, #f1f1f1, #a1a1a1);
 }
 
+
+@font-face {
+  font-family: 'contm';
+  src: url('/public/contm.ttf') format('truetype');
+}
+
 .App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: contm;
+}
+
+#header{
+  font-size: 7rem;
+  color: #ffffff;
+  filter: drop-shadow(0 8px 4px rgba(31, 31, 31, 0.5));
+  margin-top: 10rem;
+  margin-bottom: -3rem;
+  opacity: 50%;
+}
+
+#gallery{
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -10,7 +34,6 @@ body{
   align-items: center;
   transform: scale(.9);
 }
-
 
 .shelfimg{
   margin-bottom: 20rem;
@@ -24,19 +47,32 @@ body{
   position: relative;
   z-index: 1;
   transition: .5s;
-  width: 10vw;
+  width: 12rem;
 }
 
 .piecesimg:hover{
   transform: scale(1.1) translateY(-.9rem);
 }
 
-#piecesDiv{
+.piecesDiv{
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:5rem;
+  gap:10rem;
   transform: translateY(1rem);
+}
+
+.lastshelf{
+  margin-bottom: 0rem;
+}
+
+.logoimg {
+  filter: drop-shadow(0 0px 6px rgba(31, 31, 31, 0.5));
+  z-index: 1;
+  transition: .5s;
+  width: 12rem;
+  margin-bottom: 5rem;
+  margin-top: -5rem;
 }
 
