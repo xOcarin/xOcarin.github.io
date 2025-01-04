@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gallery/static/css/main.3b34720e.css",
-    "main.js": "/gallery/static/js/main.6beed8e5.js",
-    "static/js/488.e249d768.chunk.js": "/gallery/static/js/488.e249d768.chunk.js",
-    "static/media/contm.ttf": "/gallery/static/media/contm.76ee5a8401a0bbe0de9c.ttf",
-    "static/media/logo.svg": "/gallery/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/gallery/index.html",
-    "main.3b34720e.css.map": "/gallery/static/css/main.3b34720e.css.map",
-    "main.6beed8e5.js.map": "/gallery/static/js/main.6beed8e5.js.map",
-    "488.e249d768.chunk.js.map": "/gallery/static/js/488.e249d768.chunk.js.map"
+    "main.css": "/xocarin.github.io/static/css/main.1b0d86c4.css",
+    "main.js": "/xocarin.github.io/static/js/main.e54e1bbe.js",
+    "static/js/488.e249d768.chunk.js": "/xocarin.github.io/static/js/488.e249d768.chunk.js",
+    "static/media/contm.ttf": "/xocarin.github.io/static/media/contm.76ee5a8401a0bbe0de9c.ttf",
+    "static/media/logo.svg": "/xocarin.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/xocarin.github.io/index.html",
+    "main.1b0d86c4.css.map": "/xocarin.github.io/static/css/main.1b0d86c4.css.map",
+    "main.e54e1bbe.js.map": "/xocarin.github.io/static/js/main.e54e1bbe.js.map",
+    "488.e249d768.chunk.js.map": "/xocarin.github.io/static/js/488.e249d768.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b34720e.css",
-    "static/js/main.6beed8e5.js"
+    "static/css/main.1b0d86c4.css",
+    "static/js/main.e54e1bbe.js"
   ]
 }
