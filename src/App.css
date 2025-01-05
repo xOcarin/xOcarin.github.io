@@ -258,3 +258,34 @@ body{
   opacity: 1;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .piecesimg {
+    width: 20%; /* Adjust width for mobile images */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height for mobile images */
+  }
+
+  .modal-content {
+    width: 20%; /* Make modal content responsive */
+    margin: auto; /* Center modal */
+  }
+
+  .intro-text {
+    font-size: 1.5em; /* Adjust font size for mobile */
+  }
+
+  #gallery {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.4);
+  }
+}
+

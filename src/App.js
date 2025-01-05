@@ -14,6 +14,8 @@ function App() {
   // Add new state for intro overlay
   const [showIntro, setShowIntro] = useState(true);
   const [mainContentVisible, setMainContentVisible] = useState(false);
+  // Add state for screen width
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const imageRef = useRef(null);
   const hoverSound = useRef(new Audio('/hover.wav'));
@@ -38,6 +40,17 @@ function App() {
       };
     }
   }, [selectedImage]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   // Add handler for opening modal
   const handleImageClick = (imageSrc, description) => {
@@ -142,6 +155,7 @@ function App() {
                   src={selectedImage} 
                   alt="Selected artwork" 
                   className={`modal-image ${isVisible ? 'active' : ''}`}
+                  style={{ width: screenWidth < 768 ? '100%' : 'auto' }}
                 />
                 <div className="modal-text">
                   {selectedDescription}
@@ -202,15 +216,6 @@ function App() {
 
             <div className='piecesDiv'>
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece1.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
-            </div>
-            <img className='shelfimg' src="/shelf2.png" alt="Description" />
-
-            <div className='piecesDiv'>
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
