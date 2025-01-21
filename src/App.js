@@ -197,8 +197,8 @@ function App() {
             <img className='shelfimg' src="/shelf2.png" alt="Description" />
 
             <div className='piecesDiv'>
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
+              <img className='piecesimg' src="/piece6.jpg" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece6.jpg", "006- get real.")} />
+              <img className='piecesimg' src="/piece7.jpg" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece7.jpg", "007- go back.")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
