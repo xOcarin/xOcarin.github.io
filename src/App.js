@@ -25,6 +25,16 @@ function App() {
   const fadeSound = useRef(new Audio('/skkk.wav'));
   const fade2Sound = useRef(new Audio('/fadeIn.wav'));
 
+  // Set all audio volumes to 50%
+  useEffect(() => {
+    hoverSound.current.volume = 0.5;
+    clickSound.current.volume = 0.5;
+    pingSound.current.volume = 0.5;
+    closeSound.current.volume = 0.5;
+    fadeSound.current.volume = 0.5;
+    fade2Sound.current.volume = 0.5;
+  }, []);
+
   useEffect(() => {
     if (selectedImage && imageRef.current) {
       VanillaTilt.init(imageRef.current, {
