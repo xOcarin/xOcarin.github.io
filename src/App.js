@@ -220,13 +220,13 @@ function App() {
               <img className='piecesimg' src="/piece12.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece12.png", "012- Thumbnail")} />
               <img className='piecesimg' src="/piece13.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece13.png", "013- Dark Mountain Logo Concept")} />
               <img className='piecesimg' src="/piece14.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece14.png", "014- My Animal Kingdom")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
+              <img className='piecesimg' src="/piece15.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece15.png", "015- Light Background")} />
             </div>
             <img className='shelfimg' src="/shelf2.png" alt="Description" />
 
             <div className='piecesDiv'>
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece1.png", "Coming Soon!")} />
-              <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
+              <img className='piecesimg' src="/piece16.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece16.png", "016- Blue Background")} />
+              <img className='piecesimg' src="/piece17.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/piece17.png", "017- Dark Background")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
               <img className='piecesimg' src="/empty.png" alt="Description" onMouseEnter={playHoverSound} onClick={() => handleImageClick("/empty.png", "Coming Soon!")} />
