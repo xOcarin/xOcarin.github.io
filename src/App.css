@@ -65,7 +65,7 @@ body{
   position: relative;
   z-index: 1;
   transition: .25s;
-  height: 12rem;
+  height: 10rem;
   width: auto;
   object-fit: contain;
 }

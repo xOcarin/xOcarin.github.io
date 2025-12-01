@@ -182,8 +182,6 @@ function App() {
                 <h2>Hello, I'm Ocarin.</h2>
                 <p>
                   Welcome to a collection of my creative works. This gallery serves as both a showcase and personal motivation to continue creating.
-
-                  To develop my artistic skills, I've set a goal to create 50 pieces that I'm proud of by the end of 2025.
                   <br />
                   <br />
                   I hope you enjoy!
